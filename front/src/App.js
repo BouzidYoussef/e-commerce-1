@@ -1,3 +1,5 @@
+import React from 'react';
+import data from './data';
 
 function App() {
   return (
@@ -13,104 +15,31 @@ function App() {
         </header>
         <main>
             <div className="row center">
-                <div className="card">
-                    <a href="product.html"><img className="meduim" src="./images/product-1.jpg" alt="product"/></a>
-                    <div className="card-body">
-                        <a href="product.html"><h2>Dancing pyjama</h2></a>
-                        <div className="rating">
-                            <span> <i className="fa fa-star"></i> </span>
-                            <span> <i className="fa fa-star"></i> </span>
-                            <span> <i className="fa fa-star"></i> </span>
-                            <span> <i className="fa fa-star"></i> </span>
-                            <span> <i className="fa fa-star"></i> </span>
-                        </div>
-                        <div className="price">
-                            $70
-                        </div>
+              {
+                data.products.map(product =>(<div key={product._id} className="card">
+                <a href={`/product/${product._id}`}>
+                  <img 
+                  className="meduim" 
+                  src={product.image} 
+                  alt={product.name}
+                  />
+                  </a>
+                <div className="card-body">
+                <a href={`/product/${product._id}`}><h2>{product.name}</h2></a>
+                    <div className="rating">
+                        <span> <i className="fa fa-star"></i> </span>
+                        <span> <i className="fa fa-star"></i> </span>
+                        <span> <i className="fa fa-star"></i> </span>
+                        <span> <i className="fa fa-star"></i> </span>
+                        <span> <i className="fa fa-star"></i> </span>
                     </div>
+                    <div className="price">
+                        ${product.price}
+                    </div>       
                 </div>
-                <div className="card">
-
-                    <a href="product.html"><img className="meduim" src="./images/product-1.jpg" alt="product"/></a>
-                    <div className="card-body">
-                        <a href="product.html"><h2>Dancing pyjama</h2></a>
-                        <div className="rating">
-                            <span> <i className="fa fa-star"></i> </span>
-                            <span> <i className="fa fa-star"></i> </span>
-                            <span> <i className="fa fa-star"></i> </span>
-                            <span> <i className="fa fa-star"></i> </span>
-                            <span> <i className="fa fa-star"></i> </span>
-                        </div>
-                        <div className="price">
-                            $70
-                        </div>
-                    </div>
-                </div>
-                <div className="card">
-                    <a href="product.html"><img className="meduim" src="./images/product-1.jpg" alt="product"/></a>
-                    <div className="card-body">
-                        <a href="product.html"><h2>Dancing pyjama</h2></a>
-                        <div className="rating">
-                            <span> <i className="fa fa-star"></i> </span>
-                            <span> <i className="fa fa-star"></i> </span>
-                            <span> <i className="fa fa-star"></i> </span>
-                            <span> <i className="fa fa-star"></i> </span>
-                            <span> <i className="fa fa-star"></i> </span>
-                        </div>
-                        <div className="price">
-                            $70
-                        </div>
-                    </div>
-                </div>
-                <div className="card">
-                    <a href="product.html"><img className="meduim" src="./images/product-1.jpg" alt="product"/></a>
-                    <div className="card-body">
-                        <a href="product.html"><h2>Dancing pyjama</h2></a>
-                        <div className="rating">
-                            <span> <i className="fa fa-star"></i> </span>
-                            <span> <i className="fa fa-star"></i> </span>
-                            <span> <i className="fa fa-star"></i> </span>
-                            <span> <i className="fa fa-star"></i> </span>
-                            <span> <i className="fa fa-star"></i> </span>
-                        </div>
-                        <div className="price">
-                            $70
-                        </div>
-                    </div>
-                </div>
-                <div className="card">
-                     <a href="product.html"><img className="meduim" src="./images/product-1.jpg" alt="product"/></a>
-                    <div className="card-body">
-                        <a href="product.html"><h2>Dancing pyjama</h2></a>
-                        <div className="rating">
-                            <span> <i className="fa fa-star"></i> </span>
-                            <span> <i className="fa fa-star"></i> </span>
-                            <span> <i className="fa fa-star"></i> </span>
-                            <span> <i className="fa fa-star"></i> </span>
-                            <span> <i className="fa fa-star"></i> </span>
-                        </div>
-                        <div className="price">
-                            $70
-                        </div>
-                    </div>
-                </div>
-                <div className="card">
-                    <a href="product.html"><img className="meduim" src="./images/product-1.jpg" alt="product"/></a>
-                    <div className="card-body">
-                        <a href="product.html"><h2>Dancing pyjama</h2></a>
-                        <div className="rating">
-                            <span> <i className="fa fa-star"></i> </span>
-                            <span> <i className="fa fa-star"></i> </span>
-                            <span> <i className="fa fa-star"></i> </span>
-                            <span> <i className="fa fa-star"></i> </span>
-                            <span> <i className="fa fa-star"></i> </span>
-                        </div>
-                        <div className="price">
-                            $70
-                        </div>
-                    </div>
-                </div>
-            </div>
+              </div>
+                ))}
+              </div>
         </main>
         <footer className="row center">
             All rights are reserved
