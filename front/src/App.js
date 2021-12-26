@@ -34,7 +34,7 @@ function App() {
                         <span> <i className="fa fa-star"></i> </span>
                     </div>
                     <div className="price">
-                        ${product.price}
+                        {product.price}DT
                     </div>       
                 </div>
               </div>
