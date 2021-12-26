@@ -67,7 +67,7 @@ const data = {
             description:"Blouson fourrure interne Celio",
         },
         {
-            _id:'5',
+            _id:'7',
             name:"Veste Celio",
             category:"Veste",
             image:"/images/product-7.avif",
@@ -78,7 +78,7 @@ const data = {
             description:"Veste printemps Celio",
         },
         {
-            _id:'6',
+            _id:'8',
             name:"Blouson hiver Celio",
             category:"Blouson",
             image:"/images/product-8.avif",
