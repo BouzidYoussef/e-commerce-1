@@ -19,7 +19,7 @@ const data = {
             price:70,
             brand:"Celio",
             rating:4.5,
-            numReviews:10,
+            numReviews:40,
             description:"Blue jeans Celio 2020",
         },
         {
@@ -30,7 +30,7 @@ const data = {
             price:230,
             brand:"Nike",
             rating:3,
-            numReviews:10,
+            numReviews:109,
             description:"Polo maille Celio 2020",
         },
         {
@@ -41,7 +41,7 @@ const data = {
             price:180,
             brand:"Celio",
             rating:4.5,
-            numReviews:10,
+            numReviews:180,
             description:"Hangover blouse Celio 2020",
         },
         {
@@ -52,7 +52,7 @@ const data = {
             price:90,
             brand:"Celio",
             rating:2.5,
-            numReviews:10,
+            numReviews:122,
             description:"Veste printemps Celio",
         },
         {
