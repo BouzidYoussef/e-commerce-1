@@ -1,5 +1,4 @@
 import React from 'react';
-import product from '../components/product';
 import data from '../data';
 
 export default function ProductScreen(props) {
