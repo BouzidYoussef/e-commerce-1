@@ -18,8 +18,8 @@ function App() {
         </header>
         <main>
           <Routes>
-          <Route path="/product/:id" compnent={ProductScreen}></Route>
-          <Route path="/" component={HomeScreen} exact></Route>
+          <Route exact path="/product/:id" compnent={ProductScreen}></Route>
+          <Route exact path="/" component={HomeScreen} ></Route>
           </Routes>
         </main>
         <footer className="row center">
