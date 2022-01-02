@@ -62,7 +62,7 @@ export default function ProfileScreen() {
     <div>
       <form className="form" onSubmit={submitHandler}>
         <div>
-          <h1>User Profile</h1>
+          <h1>Profile</h1>
         </div>
         {loading ? (
           <LoadingBox></LoadingBox>
@@ -76,11 +76,11 @@ export default function ProfileScreen() {
             )}
             {successUpdate && (
               <MessageBox variant="success">
-                Profile Updated Successfully
+                Profile mis a jour avex succées
               </MessageBox>
             )}
             <div>
-              <label htmlFor="name">Name</label>
+              <label htmlFor="name">Nom</label>
               <input
                 id="name"
                 type="text"
@@ -104,24 +104,24 @@ export default function ProfileScreen() {
               <input
                 id="password"
                 type="password"
-                placeholder="Enter password"
+                placeholder="Mot de passe"
                 onChange={(e) => setPassword(e.target.value)}
               ></input>
             </div>
             <div>
-              <label htmlFor="confirmPassword">confirm Password</label>
+              <label htmlFor="confirmPassword">confirmer votre mot de passe</label>
               <input
                 id="confirmPassword"
                 type="password"
-                placeholder="Enter confirm password"
+                placeholder="Mot de passe"
                 onChange={(e) => setConfirmPassword(e.target.value)}
               ></input>
             </div>
             {user.isSeller && (
               <>
-                <h2>Seller</h2>
+                <h2>Vendeur</h2>
                 <div>
-                  <label htmlFor="sellerName">Seller Name</label>
+                  <label htmlFor="sellerName">Nom du vendeur</label>
                   <input
                     id="sellerName"
                     type="text"
@@ -131,7 +131,7 @@ export default function ProfileScreen() {
                   ></input>
                 </div>
                 <div>
-                  <label htmlFor="sellerLogo">Seller Logo</label>
+                  <label htmlFor="sellerLogo">Logo vendeur</label>
                   <input
                     id="sellerLogo"
                     type="text"
@@ -141,7 +141,7 @@ export default function ProfileScreen() {
                   ></input>
                 </div>
                 <div>
-                  <label htmlFor="sellerDescription">Seller Description</label>
+                  <label htmlFor="sellerDescription">Description du vendeur</label>
                   <input
                     id="sellerDescription"
                     type="text"
@@ -155,7 +155,7 @@ export default function ProfileScreen() {
             <div>
               <label />
               <button className="primary" type="submit">
-                Update
+                Mettre a jour
               </button>
             </div>
           </>

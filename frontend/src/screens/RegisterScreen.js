@@ -42,21 +42,21 @@ export default function RegisterScreen(props) {
         {loading && <LoadingBox></LoadingBox>}
         {error && <MessageBox variant="danger">{error}</MessageBox>}
         <div>
-          <label htmlFor="name">Name</label>
+          <label htmlFor="name">Nom</label>
           <input
             type="text"
             id="name"
-            placeholder="Enter name"
+            placeholder="Votre nom"
             required
             onChange={(e) => setName(e.target.value)}
           ></input>
         </div>
         <div>
-          <label htmlFor="email">Email address</label>
+          <label htmlFor="email">Email</label>
           <input
             type="email"
             id="email"
-            placeholder="Enter email"
+            placeholder="Votre email"
             required
             onChange={(e) => setEmail(e.target.value)}
           ></input>
@@ -66,7 +66,7 @@ export default function RegisterScreen(props) {
           <input
             type="password"
             id="password"
-            placeholder="Enter password"
+            placeholder="Votre mot de passe"
             required
             onChange={(e) => setPassword(e.target.value)}
           ></input>
@@ -76,7 +76,7 @@ export default function RegisterScreen(props) {
           <input
             type="password"
             id="confirmPassword"
-            placeholder="Enter confirm password"
+            placeholder="Votre mot de passe"
             required
             onChange={(e) => setConfirmPassword(e.target.value)}
           ></input>
@@ -84,14 +84,14 @@ export default function RegisterScreen(props) {
         <div>
           <label />
           <button className="primary" type="submit">
-            Register
+          Créer votre compte
           </button>
         </div>
         <div>
           <label />
           <div>
-            Already have an account?{' '}
-            <Link to={`/signin?redirect=${redirect}`}>Sign-In</Link>
+            Vous etes deja client?{' '}
+            <Link to={`/signin?redirect=${redirect}`}>Se connecter</Link>
           </div>
         </div>
       </form>
