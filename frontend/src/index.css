@@ -27,7 +27,7 @@ body {
 }
 header {
   grid-area: header;
-  background-color: rgb(55, 66, 219);
+  background-color: rgb(100, 1, 14);
 }
 main {
   grid-area: main;
@@ -35,7 +35,7 @@ main {
 }
 footer {
   grid-area: footer;
-  background-color: rgb(55, 66, 219);
+  background-color: rgb(100, 1, 14);
   color: #ffffff;
 }
 /* Common */
@@ -85,7 +85,7 @@ button:hover {
   border: 0.1rem #404040 solid;
 }
 button.primary {
-  background-color: #f0c040;
+  background-color: #d3e3e6;
 }
 button.block {
   width: 100%;
@@ -99,7 +99,8 @@ header a {
   padding: 1rem;
 }
 a.brand {
-  color: #ffffff;
+  background-color: #00090a;
+  color: #d3e3e6;
   font-size: 3rem;
   font-weight: bold;
 }
